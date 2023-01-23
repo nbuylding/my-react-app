@@ -1,25 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <span className='header'>
+          <h1>developedByNat</h1>
+          <button>Resume</button>
+        </span>
+        <div className='intro'>
+          <h2>Hi, I'm Natasha!</h2>
+          <h3>Author. Designer. Cat Mom.</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sagittis aliquet ex sed sagittis. Vestibulum quis nisi id nisl mattis aliquet in ut lacus. Proin eu finibus tellus, in gravida velit. Nunc egestas at arcu pharetra accumsan.</p>
+          <div>
+            <img src='https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg' alt='domestic cat' className='portrait'/>
+          </div>
+        </div>
+
+      </div>
+    )
+  }
 }
 
 export default App;
