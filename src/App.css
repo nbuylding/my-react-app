@@ -60,7 +60,7 @@ span.header button {
   width: 300px;
   border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.51);
-  animation: cat 2000ms ease-in-out;
+  animation: cat 5s infinite;
 }
 
 @keyframes cat {
